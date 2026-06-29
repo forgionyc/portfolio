@@ -1,7 +1,11 @@
-export default function Index({ message }) {
+import Navbar from '../../components/navbar'
+import Footer from '../../components/footer'
+export default function Index({ first_name, last_name, message }) {
   return (
-    <div>
-      <h1>{message}</h1>
+    <div className="bg-[rgb(10,10,11)] text-[rgb(237,237,238)] min-h-screen">
+      <Navbar first_name={first_name} last_name={last_name} />
+      <h1 className="flex justify-center" >{message}</h1>
+      <Footer first_name={first_name} last_name={last_name} />
     </div>
   )
 }

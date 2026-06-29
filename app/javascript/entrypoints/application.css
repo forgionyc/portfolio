@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400&family=JetBrains+Mono:wght@400&display=swap");
 @import 'tailwindcss';
 
 @plugin '@tailwindcss/typography';
@@ -10,4 +11,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@theme {
+  --font-space-grotesk: "Space Grotesk", sans-serif;
+  --font-jetbrains-mono: "JetBrains Mono", monospace;
 }
