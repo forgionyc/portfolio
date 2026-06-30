@@ -2,16 +2,16 @@ import railsSvg from '/assets/rails.svg'
 import inertiaSvg from '/assets/inertia.svg'
 import reactSvg from '/assets/react.svg'
 
-export default function Footer({ first_name, last_name }) {
+export default function Footer({ first_name, last_name, email, linkedin, github }) {
   return (
     <footer className="flex flex-col mt-auto border-t border-t-[rgb(30,30,33)]">
       <div className="flex justify-between items-center px-10 py-12">
-        <h1 className="font-space-grotesk font-medium text-[52px] tracking-[-1.04px] leading-[54.6px]">Let's build something <br></br> durable. <a href={`mailto:${first_name.toLowerCase()}.${last_name.toLowerCase()}@gmail.com`} className="text-[oklch(0.8_0.15_155)]">
-  {first_name.toLowerCase()}.{last_name.toLowerCase()}@gmail.com →</a>
+        <h1 className="font-space-grotesk font-medium text-[52px] tracking-[-1.04px] leading-[54.6px]">Let's build something <br></br>
+        durable. <a href={`mailto:${first_name.toLowerCase()}.${last_name.toLowerCase()}@gmail.com`} className="text-[oklch(0.8_0.15_155)]">{email} →</a>
         </h1>
         <ul className="font-jetbrains-mono flex flex-col gap-[12px] text-[14px] text-[rgb(134,134,139)]">
-          <li className="hover:text-[rgb(237,237,238)] transition-colors duration-300"><a href="/github">GITHUB</a></li>
-          <li className="hover:text-[rgb(237,237,238)] transition-colors duration-300"><a href="/linkedin">LINKEDIN</a></li>
+          <li className="hover:text-[rgb(237,237,238)] transition-colors duration-300"><a href={github} target="_blank">GITHUB</a></li>
+          <li className="hover:text-[rgb(237,237,238)] transition-colors duration-300"><a href={linkedin} target="_blank">LINKEDIN</a></li>
         </ul>
       </div>
       <div className="flex justify-center font-jetbrains-mono text-[12px] mb-4">

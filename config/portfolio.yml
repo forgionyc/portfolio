@@ -1,0 +1,7 @@
+shared:
+  information:
+    last_name: <%= ENV['LAST_NAME'] %>
+    first_name: <%= ENV['FIRST_NAME'] %>
+    email: <%= ENV['EMAIL'] %>
+    github: <%= ENV['GITHUB'] %>
+    linkedin: <%= ENV['LINKEDIN'] %>
